@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLONIFY | ECOM-WEB-APPLICATION</title>
+    <link rel="stylesheet" href="ecom.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-img">
+        <a href=""><img src="img/Logo.svg" alt="" /></a>
+      </div>
+      <div class="nav-log">
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li>
+            <a href="#"
+              >Product<i class="fa-solid fa-angle-down" style="padding: 2px"></i
+            ></a>
+          </li>
+
+          <!-- <select class="selected" name="abcd" id="header_select" title="name">
+              <option value="Product">
+               
+              </option>
+            </select> -->
+
+          <li><a href="#">Pages</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="menu1">
+          <li><img src="img/search.svg" alt="" class="menus1" /></li>
+          <li><img src="img/Union.svg" alt="" class="menus1" /></li>
+          <li><img src="img/Vector.svg" alt="" class="menus1" /></li>
+          <li><img src="img/Icon Cart.svg" alt="" /></li>
+          <li onclick="showNavbar()">
+            <img src="img5/Hamburger.svg" alt="" />
+          </li>
+        </ul>
+      </div> 
+      <div class="side-nav">
+        <p style="text-align: right" onclick="closeNavbar()">
+          <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navlinks">
+          <p><a href="#">Home</a></p>
+          <p><a href="#">Shop</a></p>
+          <p>
+            <select name="Products" id="products2">
+              <option value="Products">Products</option>
+            </select>
+          </p>
+
+          <p><a href="#">Pages</a></p>
+        </div>
+      </div>
+    </nav>
+
+    <div class="containers swiper" id="con">
+      <div class="container1 swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="img1">
+            <div class="three">
+              <img src="img/firstimg.svg" alt="" class="brown-bag" />
+            </div>
+            <div class="img-text">
+              <h6>IKIGAI</h6>
+              <h1>Leather bags worth hugging.</h1>
+              <p>
+                Keep your everyday style chic and on-trend with our selection
+                20+ styles to choose from.
+              </p>
+
+              <div class="collection">
+                <a href="#">See Collection</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img1">
+            <div class="one">
+              <img src="img/Paste image.svg" alt="" class="brown-bag" />
+            </div>
+            <div class="img-text">
+              <h6>IKIGAI</h6>
+              <h1>Leather bags worth hugging.</h1>
+              <p>
+                Keep your everyday style chic and on-trend with our selection
+                20+ styles to choose from.
+              </p>
+
+              <div class="collection">
+                <a href="#">See Collection</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img1">
+            <div class="two">
+              <img src="img/firstimg.svg" alt="" class="brown-bag" />
+            </div>
+            <div class="img-text">
+              <h6>IKIGAI</h6>
+              <h1>Leather bags worth hugging.</h1>
+              <p>
+                Keep your everyday style chic and on-trend with our selection
+                20+ styles to choose from.
+              </p>
+
+              <div class="collection">
+                <a href="#">See Collection</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img1">
+            <div class="one">
+              <img src="img/Paste image.svg" alt="" class="brown-bag" />
+            </div>
+            <div class="img-text">
+              <h6>IKIGAI</h6>
+              <h1>Leather bags worth hugging.</h1>
+              <p>
+                Keep your everyday style chic and on-trend with our selection
+                20+ styles to choose from.
+              </p>
+
+              <div class="collection">
+                <a href="#">See Collection</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <div class="swiper-button-next secbutton">
+          <img src="img/Button1.svg" alt="" />
+        </div>
+        <div class="swiper-button-prev firbutton">
+          <img src="img/Button.svg" alt="" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- logo slider starts -->
+    <div class="outer">
+      <div class="inner">
+        <div class="swiper mySwiper">
+          <div class=" swiper-wrapper four">
+            <div class="swiper-slide"><img src="img2/hush.svg" alt="" /></div>
+            <div class="swiper-slide">
+              <img src="img2/addidas.svg" alt="" />
+            </div>
+            <div class="swiper-slide"><img src="img2/shoei.svg" alt="" /></div>
+            <div class="swiper-slide"><img src="img2/marc.svg" alt="" /></div>
+            <div class="swiper-slide"><img src="img2/puma.svg" alt="" /></div>
+            <div class="swiper-slide"><img src="img2/suprme.svg" alt="" /></div>
+            <div class="swiper-slide"><img src="img2/hush.svg" alt="" /></div>
+            <div class="swiper-slide">
+              <img src="img2/addidas.svg" alt="" />
+            </div>
+            <div class="swiper-slide"><img src="img2/shoei.svg" alt="" /></div>
+            <div class="swiper-slide"><img src="img2/marc.svg" alt="" /></div>
+            <div class="swiper-slide"><img src="img2/puma.svg" alt="" /></div>
+            <div class="swiper-slide"><img src="img2/suprme.svg" alt="" /></div>
+          </div>
+          <div class="swiper-button-prev">
+            <img src="img/Button.svg" alt="button" class="arrow" />
+          </div>
+          <div class="swiper-button-next">
+            <img src="img/Button1.svg" alt="button2" class="arrow2" />
+          </div>
+        </div>
+        <div class="swiper-pagination pagint"></div>
+      </div>
+    </div>
+
+    <!-- first element complete -->
+    <div class="container-img">
+      <div class="main-section">
+        <div class="img-section">
+          <img src="img3/img3.jpg" alt="first" class="new-img" />
+          <div class="text1">
+            <p>Featured</p>
+            <h4>Nairo Series®</h4>
+          </div>
+        </div>
+
+        <div class="img-section">
+          <img src="img3/img1.jpg" alt="second" class="new-img" />
+          <div class="text1">
+            <p>New</p>
+            <h4>Kensho Series®</h4>
+          </div>
+        </div>
+        <div class="img-section">
+          <img src="img3/img2.jpg" alt="third" class="new-img" />
+          <div class="text1">
+            <p>Handmade</p>
+            <h4>Atarashi Series®</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- three image set over -->
+    <div class="fifth-container">
+      <div class="time-img">
+        <div class="black-img">
+          <img src="img4/blackimg.jpg" alt="blackimg" />
+        </div>
+        <div class="time-txt">
+          <h6>EXCLUSIVE</h6>
+          <h1>50% OFF</h1>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque
+          </p>
+          <h2>05d : 11h : 23m : 02s</h2>
+          <div class="button">
+            <button class="btn-shop">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- black bag img complete -->
+
+    <div class="sixth-contanier">
+      <div class="sec-container">
+        <div class="wordss">
+          <h1>Join our newsletter</h1>
+          <p>Enjoy big discounts and latest updates right to your inbox.</p>
+        </div>
+        <div class="input">
+          <div class="email">
+            <img src="./img5/email.svg" alt="" />
+            <input type="email" placeholder="Email address" id="emailInput" />
+          </div>
+          <div class="signup">
+            <button class="sign">SignUp</button>
+          </div>
+        </div>
+        <div class="signup-mq">
+          <button class="sign-mq">Sign Up</button>
+        </div>
+      </div>
+    </div>
+    <div class="bgimg-container">
+      <div class="img-container">
+        <div class="bg-text">
+          <h1>Exquisite</h1>
+          <h1 id="sec-h1">Craftsmanship</h1>
+          <p>Phosfluor escently engage worldwide</p>
+          <p id="sec-blk">with web-enabled technology.</p>
+          <p id="sec-p">
+            with methodologies web-enabled process-centric technology.
+          </p>
+          <div class="learn-more">
+            <a href="">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bg img  complete -->
+    <div class="ft-container">
+      <div class="content-container">
+        <div class="for-left">
+          <div><img src="img/Logo.svg" alt="mainlogo" /></div>
+          <div class="para">
+            <p>Phosf luorescently engage worldwide</p>
+            <p>method process shopping.</p>
+            <div>
+              <img src="footer-logo/Icon Box.svg" alt="facebook" />
+              <img src="footer-logo/insta.svg" alt="facebook" />
+              <img src="footer-logo/twit.svg" alt="facebook" />
+              <img src="footer-logo/meesage.svg" alt="facebook" />
+            </div>
+          </div>
+        </div>
+        <div class="for-right">
+          <div class="first-list">
+            <ul>
+              <li>Product</li>
+              <li>Learn</li>
+              <li>Plugins</li>
+              <li>Gallery</li>
+              <li>Pricing</li>
+            </ul>
+          </div>
+          <div class="second-list">
+            <ul>
+              <li>Information</li>
+              <li>Privacy</li>
+              <li>cookies</li>
+              <li>Terms</li>
+              <li>Security</li>
+            </ul>
+          </div>
+          <div class="thrid-list">
+            <ul>
+              <li>Support</li>
+              <li>Updates</li>
+              <li>Discord</li>
+              <li>Startups</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="botton-footer">
+        <div class="left-footer">
+          <p>© 2088 Nayzak Design</p>
+        </div>
+        <div class="right-footer">
+          <img src="footer-logo/Language.svg" alt="logo" />
+          <img src="footer-logo/Currency.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- mob footer -->
+    <div class="mob-ftr">
+      <div class="sec-mob">
+        <div class="img-p">
+          <img src="footer-logo/Logo.svg" alt="" />
+          <p>Phosf luorescently engage worldwide method process shopping.</p>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                id="pro"
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Product
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul class="list1">
+                  <li>Learn</li>
+                  <li>Plugins</li>
+                  <li>Gallery</li>
+                  <li>Pricing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                id="pro"
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Information
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul class="list1">
+                  <li>Privacy</li>
+                  <li>Cookies</li>
+                  <li>Terms</li>
+                  <li>Security</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                id="pro"
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Support
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul class="list1">
+                  <li>Updates</li>
+                  <li>Discord</li>
+                  <li>Startups</li>
+                  <li>Contact</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="eng-usd">
+          <img src="footer-logo/Flags.svg" alt="no" />
+          <select name="English" id="eng">
+            <option value="English">English</option>
+          </select>
+          <select name="Usd" id="usd">
+            <option value="Usd">USD</option>
+          </select>
+        </div>
+        <div class="ftr">
+          <div class="logo-frt">
+            <img src="footer-logo/Icon Box.svg" alt="facebook" />
+            <img src="footer-logo/insta.svg" alt="facebook" />
+            <img src="footer-logo/twit.svg" alt="facebook" />
+            <img src="footer-logo/meesage.svg" alt="facebook" />
+          </div>
+          <div class="last-frt">
+            <p>© 2088 Nayzak Design</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script>
+      const selectHeader = document.getElementById("header_select");
+
+      const headerSelect = (e) => {
+        console.log(e.target.value);
+      };
+      selectHeader.addEventListener("change", headerSelect);
+    </script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="sidenav.js"></script>
+    <script>
+      function updatePlaceholder() {
+        const emailInput = document.getElementById("emailInput");
+        if (window.innerWidth >= 600) {
+          emailInput.placeholder = "Email address";
+        } else {
+          emailInput.placeholder = "Your Email";
+        }
+      }
+
+      updatePlaceholder();
+
+      window.addEventListener("resize", updatePlaceholder);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".containers", {
+        slidesPerview: 1,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 6,
+        loop: true,
+        autoplay: {
+          delay: 700,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+       
+      });
+    </script>
+  </body>
+</html>
